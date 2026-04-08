@@ -1,4 +1,4 @@
-"""
+f"""
 Chinook Analytics Dashboard
 음악 스토어 경영분석 대시보드 (Streamlit + SQLite)
 
@@ -138,7 +138,7 @@ def format_currency(value):
 # ============================================================
 def page_overview(df_inv, df_inv_full):
     st.title("📊 매출 Overview")
-    st.caption("전체 매출 추이와 핵심 지표를 한눈에 확인합니다.")
+    st.caption("분석 결과 확인: 전체 매출 추이와 핵심 지표를 한 눈에 확인합니다.")
 
     if df_inv.empty:
         st.warning("선택한 조건에 해당하는 데이터가 없습니다. 사이드바 필터를 조정해주세요.")
